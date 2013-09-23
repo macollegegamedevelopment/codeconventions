@@ -55,7 +55,7 @@ package codeconventions {
 			_users.push(5);
 			
 			// de vector heeft ook code completion
-			_users[0].age;
+			trace(_users[0].age);
 			
 		}
 		
