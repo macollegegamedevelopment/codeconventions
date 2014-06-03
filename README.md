@@ -5,7 +5,8 @@ codeconventions
 ####Ma Game Development
 
 ####Inhoudsopgave:
-
+* auto-gen TOC:
+{:toc}
 
 #### 1 – Waarom Code conventions
 In deze repository vind je code voorbeelden voor de Code Conventions: hoe codeer je je code.
