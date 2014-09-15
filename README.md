@@ -233,9 +233,7 @@ if(randomNumber == 0)
 shootingTower.aim(mouseX, mouseY);
 shootingTower.shoot();
 ```
-De verschillende Code Conventions staan in de voorbeeld bestanden in deze hoofdmap.
-
-Op dit moment zijn er de volgende Code Conventions:
+Naast bovenstaande Code Conventions zijn er ook een aantal voorbeeld bestanden.
 
 - GetterSetter.as -> hoe en waarom gebruik je get & set -> https://github.com/macollegegamedevelopment/codeconventions/blob/master/GetterSetter.as
 - StronglyTypedObjects.as -> hoe en waarom gebruik je data typen -> https://github.com/macollegegamedevelopment/codeconventions/blob/master/StronglyTypedObjects.as
