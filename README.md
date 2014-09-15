@@ -4,9 +4,7 @@ codeconventions
 ####Code Conventions
 ####Ma Game Development
 
-####Inhoudsopgave:
-* auto-gen TOC:
-{:toc}
+
 
 #### 1 – Waarom Code conventions
 In deze repository vind je code voorbeelden voor de Code Conventions: hoe codeer je je code.
@@ -240,6 +238,6 @@ De verschillende Code Conventions staan in de voorbeeld bestanden in deze hoofdm
 Op dit moment zijn er de volgende Code Conventions:
 
 - GetterSetter.as -> hoe en waarom gebruik je get & set -> https://github.com/macollegegamedevelopment/codeconventions/blob/master/GetterSetter.as
-- StronglyTypedObjects.as -> hoe en waarom gebruik je data typen -> https://github.com/macollegegamedevelopment/codeconventions/blob/master/Dependencies.as
+- StronglyTypedObjects.as -> hoe en waarom gebruik je data typen -> https://github.com/macollegegamedevelopment/codeconventions/blob/master/StronglyTypedObjects.as
 
 De bestanden in de map 'objects' bestaan alleen maar ter voorbeeld van de Code Conventions.
