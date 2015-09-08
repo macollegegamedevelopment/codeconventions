@@ -89,10 +89,10 @@ Gebruik lokale variabelen om referenties aan te maken naar complexe object benam
 var l : uint = gameTower[i].bullet.length;
 for(var i : uint = 0; i < l ; i++)
 {
-if(gameTower[i].bullet[j].x > stageWidth || gameTower[i].bullet[j].y > stageHeight )
-{
-	removeChild(gameTower[i].bullet[j]);
-}
+	if(gameTower[i].bullet[j].x > stageWidth || gameTower[i].bullet[j].y > stageHeight )
+	{
+		removeChild(gameTower[i].bullet[j]);
+	}
 }
 ```
 ###### Goed voorbeeld:
@@ -101,11 +101,11 @@ var bullet : Bullet;
 var l : uint = gameTower[i].bullet.length;
 for(var i : uint = 0; i < l ; i++)
 {
-bullet = gameTower[i].bullet[j];
-if(bullet.x > stageWidth || bullet.y > stageHeight )
-{
-	removeChild(bullet);
-}
+	bullet = gameTower[i].bullet[j];
+	if(bullet.x > stageWidth || bullet.y > stageHeight )
+	{
+		removeChild(bullet);
+	}
 }
 ```
 Belangrijk:
