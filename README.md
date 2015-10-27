@@ -197,8 +197,9 @@ shootingTower.Shoot();
 
 Elke Class heeft maar 1 verantwoordelijkheid.
 ###### Slecht voorbeeld: meerdere verantwoordelijkheden in 1 Class
-Classname |    Verantwoordelijkheid  
-Player.cs |    Een Class die alles bevat wat de player moet doen (springen, schieten, naar de pijltjes toetsen kijken).
+Classname | Verantwoordelijkheid
+:-----------|:------------
+Player.cs | Een Class die alles bevat wat de player moet doen (springen, schieten, naar de pijltjes toetsen kijken).
 ###### goed voorbeeld: verantwoordelijkheden netjes opgedeeld
 PlayerMovement.cs -> Een Class die de beweging van de Player als verantwoordelijkheid heeft
 KeyboardInput.cs -> Class met als verantwoordelijkheid naar keyboard input te luisteren en vervolgens functies aan te roepen op de player.
