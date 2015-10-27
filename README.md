@@ -192,6 +192,30 @@ if(randomNumber == 0){
 shootingTower.Aim(mouseX, mouseY);
 shootingTower.Shoot();
 ```
+
+#### Single Responsibility Principle
+
+Elke Class heeft maar 1 verantwoordelijkheid.
+###### Slecht voorbeeld:
+Tiles.cs -> Een Class die alle tiles beheerd en rendert
+###### goed voorbeeld:
+Tiles.cs -> Een Class die alle tiles beheerd
+TilesRenderer.cs -> Een Class die alle tiles rendert
+
+Dit zorgt ervoor dat je code minder strict gekoppeld is. Als je bijvoorbeeld wilt switchen tussen een WebGL renderer of een Canvas renderer (JavaScript in je browser) dan hoef je alleen maar TilesRenderer.cs te vervangen. Tiles.cs blijft nu normaal.
+Hetzelfde geldt voor je player:
+###### Slecht voorbeeld:
+Player.cs -> Een Class die alles bevat wat de player moet doen (springen, schieten, naar de pijltjes toetsen kijken).
+###### goed voorbeeld:
+PlayerMovement.cs -> Een Class die de beweging van de Player als verantwoordelijkheid heeft
+KeyboardInput.cs -> Class met als verantwoordelijkheid naar keyboard input te luisteren en vervolgens functies aan te roepen op de player.
+
+###### CRC - Class-responsibility-collaboration cards
+Om SRP (Single Responsibility Principle) goed toe te passen, kun je gebruik maken van CRC cards. Hiervoor gebruik je A6-jes.
+Schrijf op een A6-je de naam van de Class. Daaronder schrijf je het woord 'Responsiblities'. Schrijf hieronder waar deze Class verantwoordelijk voor is. Eventueel kun je op het blaadje ook een kolom 'Collaborators' opnemen, oftewel: met welke Classes werkt deze Class samen.
+
+Voorbeeld: https://github.com/macollegegamedevelopment/codeconventions/blob/master/images/crc.jpg
+
 Naast bovenstaande Code Conventions zijn er ook een aantal voorbeeld bestanden.
 
 - Weapon.cs -> hoe en waarom gebruik je get & set -> https://github.com/macollegegamedevelopment/codeconventions/blob/master/Weapon.cs
