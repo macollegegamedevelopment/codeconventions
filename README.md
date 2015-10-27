@@ -196,19 +196,20 @@ shootingTower.Shoot();
 #### Single Responsibility Principle
 
 Elke Class heeft maar 1 verantwoordelijkheid.
-###### Slecht voorbeeld:
+###### Slecht voorbeeld: meerdere verantwoordelijkheden in 1 Class
 Player.cs -> Een Class die alles bevat wat de player moet doen (springen, schieten, naar de pijltjes toetsen kijken).
-###### goed voorbeeld:
+###### goed voorbeeld: verantwoordelijkheden netjes opgedeeld
 PlayerMovement.cs -> Een Class die de beweging van de Player als verantwoordelijkheid heeft
 KeyboardInput.cs -> Class met als verantwoordelijkheid naar keyboard input te luisteren en vervolgens functies aan te roepen op de player.
 
-###### Slecht voorbeeld: meerdere verantwoordelijkheden in 1 Class
+###### Slecht voorbeeld:
 Tiles.cs -> Een Class die alle tiles beheerd en rendert
-###### goed voorbeeld: verantwoordelijkheden netjes opgedeeld
+###### goed voorbeeld:
 Tiles.cs -> Een Class die alle tiles beheerd
 TilesRenderer.cs -> Een Class die alle tiles rendert
 
-Als je Class maar 1 verantwoordelijkheid heeft zorgt ervoor dat je code minder strict gekoppeld is. Als je bijvoorbeeld wilt switchen tussen een WebGL renderer of een Canvas renderer (JavaScript in je browser) dan hoef je alleen maar TilesRenderer.cs te vervangen. Tiles.cs blijft nu normaal.
+Als je Class maar 1 verantwoordelijkheid heeft zorgt ervoor dat je code minder strict gekoppeld is. Als je bijvoorbeeld voor de tiles hierboven wilt switchen tussen een WebGL renderer, Div renderer of een Canvas renderer (JavaScript in je browser) dan hoef je alleen maar TilesRenderer.cs te vervangen. Tiles.cs blijft onaangepast.
+Of als je bij de Player wilt switchen naar een TouchInput.cs (touch devices) dan hoef je niets aan te passen aan PlayerMovement.cs.
 
 ###### CRC - Class-responsibility-collaboration cards
 Om SRP (Single Responsibility Principle) goed toe te passen, kun je gebruik maken van CRC cards. Hiervoor gebruik je A6-jes.
