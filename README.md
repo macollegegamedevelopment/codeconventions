@@ -219,9 +219,4 @@ shootingTower.Shoot();
 ```
 Naast bovenstaande Code Conventions zijn er ook een aantal voorbeeld bestanden.
 
-!!! Let op, deze worden nog vervangen door C# varianten.
-
-- GetterSetter.as -> hoe en waarom gebruik je get & set -> https://github.com/macollegegamedevelopment/codeconventions/blob/master/GetterSetter.as
-- StronglyTypedObjects.as -> hoe en waarom gebruik je data typen -> https://github.com/macollegegamedevelopment/codeconventions/blob/master/StronglyTypedObjects.as
-
-De bestanden in de map 'objects' bestaan alleen maar ter voorbeeld van de Code Conventions.
+- GetterSetter.as -> hoe en waarom gebruik je get & set -> https://github.com/macollegegamedevelopment/codeconventions/blob/master/Weapon.cs
