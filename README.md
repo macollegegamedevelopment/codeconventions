@@ -48,11 +48,9 @@ Shoot(); | De naam van je method is een werkwoord: shoot, drive, walk, run, etc.
 Declareer je variabelen alleen aan het begin van een block. Wacht niet met het declareren van je variabelen totdat je ze gaat gebruiken. Dit maakt je code verwarrend en niet overzichtelijk.
 
 ```c#
-public void myMethod()
-{
+public void myMethod(){
 	int int1;     	// beginning of method block
-	if (condition)
-	{
+	if (condition){
     		int int2; 	// beginning of "if" block
     		...
 	}
@@ -74,10 +72,8 @@ Gebruik lokale variabelen om referenties aan te maken naar complexe object benam
 ###### Slecht voorbeeld:
 ```c#
 int l = gameTower[i].bullet.Count;
-for (int i = 0; i < l; i++)
-{
-	if(gameTower[i].bullet[j].position.x > stageWidth || gameTower[i].bullet[j].position.y > stageHeight )
-	{
+for (int i = 0; i < l; i++){
+	if(gameTower[i].bullet[j].position.x > stageWidth || gameTower[i].bullet[j].position.y > stageHeight ){
 		Destroy(gameTower[i].bullet[j].gameObject);
 	}
 }
@@ -86,8 +82,7 @@ for (int i = 0; i < l; i++)
 ```c#
 Bullet bullet;
 int l = gameTower[i].bullet.Count;
-for (int i = 0; i < l; i++)
-{
+for (int i = 0; i < l; i++){
 	bullet = gameTower[i].bullet[j];
 	if(bullet.position.x > stageWidth || bullet.position.y > stageHeight )
 		Destroy(bullet.gameObject);
@@ -102,30 +97,21 @@ Declareer altijd je variabelen buiten een loop. Anders gaat je applicatie elke k
 #### if, if-else, if-else-if-else statement
 De if-else heeft de volgende vorm:
 ```c#
-if(condition)
-{
+if(condition){
   	statements;
 }
  
-if(condition)
-{
+if(condition){
   	statements;
-}
-else
-{
+} else {
   	statements;
 }
  
-if(condition)
-{
+if(condition){
   	statements;
-}
-else if (condition)
-{
+} else if (condition){
   	statements;
-}
-else if (condition)
-{
+} else if (condition){
   	statements;
 }
 ```
@@ -140,8 +126,7 @@ statement;
  
 De for statement heeft de volgende vorm:
 ```c#
-for (initialization;condition;update)
-{
+for (initialization;condition;update){
   	statements;
 }
 ```
@@ -151,25 +136,21 @@ Tip: Probeer altijd een lokale variable aan te maken waarin je het aantal loops 
 ###### Goed voorbeeld:
 ```c#
 int l = bullets.Count;
-for (int i = 0;i < l;i++)
-{
+for (int i = 0;i < l;i++){
   	statements;
 }
 ```
 ###### Slecht voorbeeld:
 ```c#
-for (int i = 0;i < bullets.Count;i++)
-{
+for (int i = 0;i < bullets.Count;i++){
   	statements;
 }
 ```
 Tip: Voeg altijd een ‘break;’ toe aan je loop op het moment dat je hebt gevonden wat je zoekt. Voorbeeld:
 ```c#
 int l = names.Count;
-for (int i = 0;i < l;i++)
-{
-if(names[i] == searchValue)
-{
+for (int i = 0;i < l;i++){
+if(names[i] == searchValue){
 	…..
 	break;
 }
@@ -184,16 +165,13 @@ Voorkom dubbele code. Je wilt niet steeds op meerdere plekken dezelfde dingen mo
 ```c#
 int randomNumber = Random.Range(0, towers.Count); // bepaal random een tower
 
-if(randomNumber == 0)
-{
+if(randomNumber == 0){
 	tower0.Aim(mouseX, mouseY);
 	tower0.Shoot();
-} else if(randomNumber == 1)
-{
+} else if(randomNumber == 1){
 	tower1.Aim(mouseX, mouseY);
 	tower1.Shoot();
-} else if(randomNumber == 3)
-{
+} else if(randomNumber == 3){
 	tower2.Aim(mouseX, mouseY);
 	tower2.Shoot();
 }
@@ -203,14 +181,11 @@ if(randomNumber == 0)
 Tower shootingTower;
 int randomNumber = Random.Range(0, towers.Count); // bepaal random een tower
 
-if(randomNumber == 0)
-{
+if(randomNumber == 0){
 	shootingTower = tower0;
-} else if(randomNumber == 1)
-{
+} else if(randomNumber == 1){
 	shootingTower = tower1;
-} else if(randomNumber == 3)
-{
+} else if(randomNumber == 3){
 	shootingTower = tower2;
 }
 
@@ -219,4 +194,4 @@ shootingTower.Shoot();
 ```
 Naast bovenstaande Code Conventions zijn er ook een aantal voorbeeld bestanden.
 
-- GetterSetter.as -> hoe en waarom gebruik je get & set -> https://github.com/macollegegamedevelopment/codeconventions/blob/master/Weapon.cs
+- Weapon.cs -> hoe en waarom gebruik je get & set -> https://github.com/macollegegamedevelopment/codeconventions/blob/master/Weapon.cs
