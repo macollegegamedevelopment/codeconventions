@@ -201,14 +201,20 @@ Classname | Verantwoordelijkheid
 :-----------|:------------
 Player.cs | Een Class die alles bevat wat de player moet doen (springen, schieten, naar de pijltjes toetsen kijken).
 ###### goed voorbeeld: verantwoordelijkheden netjes opgedeeld
-PlayerMovement.cs -> Een Class die de beweging van de Player als verantwoordelijkheid heeft
-KeyboardInput.cs -> Class met als verantwoordelijkheid naar keyboard input te luisteren en vervolgens functies aan te roepen op de player.
+Classname | Verantwoordelijkheid
+:-----------|:------------
+PlayerMovement.cs | Een Class die de beweging van de Player als verantwoordelijkheid heeft
+KeyboardInput.cs | Class met als verantwoordelijkheid naar keyboard input te luisteren en vervolgens functies aan te roepen op de player.
 
 ###### Slecht voorbeeld:
-Tiles.cs -> Een Class die alle tiles beheerd en rendert
+Classname | Verantwoordelijkheid
+:-----------|:------------
+Tiles.cs | Een Class die alle tiles beheerd en rendert
 ###### goed voorbeeld:
-Tiles.cs -> Een Class die alle tiles beheerd  
-TilesRenderer.cs -> Een Class die alle tiles rendert
+Classname | Verantwoordelijkheid
+:-----------|:------------
+Tiles.cs | Een Class die alle tiles beheerd  
+TilesRenderer.cs | Een Class die alle tiles rendert
 
 Als je Class maar 1 verantwoordelijkheid heeft zorgt ervoor dat je code minder strict gekoppeld is. Als je bijvoorbeeld voor de tiles hierboven wilt switchen tussen een WebGL renderer, Div renderer of een Canvas renderer (JavaScript in je browser) dan hoef je alleen maar TilesRenderer.cs te vervangen. Tiles.cs blijft onaangepast.
 Of als je bij de Player wilt switchen naar een TouchInput.cs (touch devices) dan hoef je niets aan te passen aan PlayerMovement.cs.
