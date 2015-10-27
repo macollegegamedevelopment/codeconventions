@@ -193,6 +193,12 @@ shootingTower.Aim(mouseX, mouseY);
 shootingTower.Shoot();
 ```
 
+#### Alles is standaard private
+
+Variabelen zijn ALTIJD private. Als je andere Classes toegang wilt geven tot de variabelen dan maak je gebruik van getters&setters (zie onderaan deze pagina voor een voorbeeld).
+Functies zijn standaard private. Sommige maak je public op het moment dat je zeker weet dat andere Classes erbij moeten mogen.
+Hierdoor krijgen Classes een nette API. Ook voorkom je zo dat niet elke Class elkaars gegevens mag aanpassen.
+
 #### Single Responsibility Principle
 
 Elke Class heeft maar 1 verantwoordelijkheid.
@@ -221,7 +227,7 @@ Of als je bij de Player wilt switchen naar een TouchInput.cs (touch devices) dan
 
 ###### CRC - Class-responsibility-collaboration cards
 Om SRP (Single Responsibility Principle) goed toe te passen, kun je gebruik maken van CRC cards. Hiervoor gebruik je A6-jes.
-Schrijf op een A6-je de naam van de Class. Daaronder schrijf je het woord 'Responsiblities'. Schrijf hieronder waar deze Class verantwoordelijk voor is. Eventueel kun je op het blaadje ook een kolom 'Collaborators' opnemen, oftewel: met welke Classes werkt deze Class samen.
+Schrijf op een A6-je de naam van de Class + de responsiblity + de Classes waar deze Class mee samenwerkt.
 
 ![alt text](https://github.com/macollegegamedevelopment/codeconventions/blob/master/images/crc.jpg)
 
