@@ -206,7 +206,6 @@ KeyboardInput.cs -> Class met als verantwoordelijkheid naar keyboard input te lu
 Tiles.cs -> Een Class die alle tiles beheerd en rendert
 ###### goed voorbeeld:
 Tiles.cs -> Een Class die alle tiles beheerd
-
 TilesRenderer.cs -> Een Class die alle tiles rendert
 
 Als je Class maar 1 verantwoordelijkheid heeft zorgt ervoor dat je code minder strict gekoppeld is. Als je bijvoorbeeld voor de tiles hierboven wilt switchen tussen een WebGL renderer, Div renderer of een Canvas renderer (JavaScript in je browser) dan hoef je alleen maar TilesRenderer.cs te vervangen. Tiles.cs blijft onaangepast.
