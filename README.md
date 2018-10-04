@@ -2,8 +2,8 @@ codeconventions
 ===============
 
 ####Code Conventions
-####Ma Game Development
 
+####Ma Game Development
 
 
 #### 1 – Waarom Code conventions
