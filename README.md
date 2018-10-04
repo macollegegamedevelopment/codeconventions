@@ -1,8 +1,6 @@
 codeconventions
 ===============
 
-#### Code Conventions
-
 #### Ma Game Development
 
 
