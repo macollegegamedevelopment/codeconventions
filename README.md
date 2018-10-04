@@ -197,7 +197,7 @@ shootingTower.Shoot();
 
 Variabelen zijn ALTIJD private. Als je andere Classes toegang wilt geven tot de variabelen dan maak je gebruik van getters&setters (zie onderaan deze pagina voor een voorbeeld).
 Functies zijn standaard private. Sommige maak je public op het moment dat je zeker weet dat andere Classes erbij moeten mogen.
-Hierdoor krijgen Classes een nette API. Ook voorkom je zo dat niet elke Class elkaars gegevens mag aanpassen.
+Hierdoor krijgen Classes een nette API (denk aan de les over 'interfaces'). Ook voorkom je zo dat niet elke Class elkaars gegevens mag aanpassen.
 
 #### Single Responsibility Principle
 
