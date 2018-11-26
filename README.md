@@ -38,7 +38,7 @@ public const string HOW_TO_PLAY = "howToPlay"; | Een constant is altijd met hoof
 Code | Conventie
 :-----------|:------------
 Run(); | De naam van je method is altijd in het engels en begint (in C#) met een hoofdletter
-RunFast(); | Als de naam van je method uit meerdere woorden bestaat: gebruik camelCasing
+RunFast(); | Als de naam van je method uit meerdere woorden bestaat: gebruik PascalCasing
 Shoot(); | De naam van je method is een werkwoord: shoot, drive, walk, run, etc.
 
 ### Declarations (het aanmaken van je variabelen)
