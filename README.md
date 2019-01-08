@@ -29,9 +29,11 @@ public class EnemyShip | Als je Class naam uit meerdere woorden bestaat: gebruik
 
 Code | Conventie
 :-----------|:------------
-private int speed | De naam van je variabele is altijd in het engels en begint met een kleine letter
-private int scrollSpeed | Als de naam van je variabele uit meerdere woorden bestaat: gebruik camelCasing
-public const string HOW_TO_PLAY = "howToPlay"; | Een constant is altijd met hoofdletters geschreven
+private int _speed | De naam van je variabele is altijd in het engels en begint met een underscore, gevolgd door een kleine letter
+private int _scrollSpeed | Als de naam van je variabele uit meerdere woorden bestaat: gebruik camelCasing
+public const string HowToPlay = "howToPlay"; | Een constant schrijf je d.mv. PascalCasing
+
+Properties (getters/setters) starten met een hoofdletter.
 
 ###### Functions / methods
 
